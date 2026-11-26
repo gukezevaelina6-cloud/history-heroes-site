@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Герои и память — история Кабардино-Балкарии</title>
+<style>
+:root{--navy:#17324d;--blue:#2867a5;--paper:#f4f7fb;--ink:#202b38;--gold:#d7a84b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#142b43,#2c5d83);color:white;padding:54px 20px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:0 0 14px}
+.hero p{max-width:760px;margin:auto;color:#e5eef7}
+.nav{position:sticky;top:0;background:white;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:12px;box-shadow:0 2px 10px #142b4315;z-index:2}
+.nav a{color:var(--blue);font-weight:bold;text-decoration:none;padding:6px 10px}
+.wrap{max-width:960px;margin:28px auto;padding:0 16px}
+.card{background:white;border-radius:16px;padding:26px;margin:22px 0;box-shadow:0 5px 22px #142b4310;border:1px solid #e4eaf0}
+.eyebrow{color:var(--blue);font-weight:bold;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+h2{color:var(--navy);font-size:27px;margin:4px 0 12px}
+h3{color:var(--navy)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.fact{background:#f1f6fb;padding:14px;border-radius:10px}
+.fact b{display:block;color:var(--blue)}
+.timeline{border-left:3px solid var(--gold);padding-left:18px;margin:18px 0}
+.timeline p{margin:10px 0}
+.quiz{background:#f7f9fc;border-radius:12px;padding:18px;margin-top:18px}
+.question{padding:14px 0;border-bottom:1px solid #e0e6ed}
+.question:last-of-type{border:0}
+.question label{display:block;margin:8px 0;cursor:pointer}
+.btn{background:var(--blue);color:white;border:0;border-radius:9px;padding:11px 17px;font-weight:bold;font-size:15px;cursor:pointer;margin-top:12px}
+.btn.secondary{background:#e5edf5;color:var(--navy);margin-left:8px}
+.result{font-weight:bold;margin-top:12px}
+.sources a{color:var(--blue);overflow-wrap:anywhere}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:18px;margin-top:18px}
+.video-item{background:#f1f6fb;border-radius:12px;padding:16px;min-width:0}
+.video-item h3{margin:0 0 10px}
+.video-item video{display:block;width:100%;max-width:100%;background:#172b3d;border-radius:10px;aspect-ratio:16/9}
+.video-note{font-size:14px;color:#5d6b79;margin:10px 0 0}
+footer{text-align:center;color:#687787;padding:25px}
+</style></head>
+<body>
+<header class="hero"><h1>Герои и память</h1><p>Учебный проект о людях, чьи судьбы связаны с историей Великой Отечественной войны и культурой Кабардино-Балкарии.</p></header>
+<nav class="nav"><a href="#ivanov">Хасан Иванов</a><a href="#kuashev">Бетал Куашев</a><a href="#videos">Видео</a><a href="#sources">Источники</a></nav>
+<main class="wrap">
+<section class="card" id="ivanov"><div class="eyebrow">Великая Отечественная война</div><h2>Хасан Талибович Иванов</h2><p>Хасан Талибович Иванов — участник Великой Отечественной войны, офицер Красной армии. В материалах о его боевом пути особо отмечается участие подразделения под его командованием в форсировании Одера в январе 1945 года.</p><div class="facts"><div class="fact"><b>Год рождения</b>1918</div><div class="fact"><b>Родное село</b>Старый Черек</div><div class="fact"><b>Памятная дата</b>24 января 1945 года</div></div><h3>Подвиг на Одере</h3><p>24 января 1945 года рота под командованием Иванова форсировала реку Одер. Форсирование водных преград под огнём противника было важной частью наступления Красной армии на заключительном этапе войны. За проявленные мужество и командирские качества Хасан Иванов был удостоен высокого звания Героя Советского Союза.</p><div class="quiz"><h3>Проверь знания: Хасан Иванов</h3><form id="quiz1"></form><button class="btn" onclick="grade('quiz1','r1')">Проверить ответы</button><button class="btn secondary" onclick="resetQuiz('quiz1','r1')">Сбросить</button><div class="result" id="r1" aria-live="polite"></div></div></section>
+<section class="card" id="kuashev"><div class="eyebrow">Литература и военная история</div><h2>Бетал Ибрагимович Куашев</h2><p>Бетал Ибрагимович Куашев (1920–1957) — кабардинский поэт, писатель, переводчик, исследователь фольклора и участник Великой Отечественной войны. Он родился в селении Докшоково, ныне Старый Черек.</p><div class="facts"><div class="fact"><b>Годы жизни</b>1920–1957</div><div class="fact"><b>Родное село</b>Докшоково (ныне Старый Черек)</div><div class="fact"><b>Область деятельности</b>Поэзия, перевод, фольклористика</div></div><div class="timeline"><p><b>1941 год.</b> Добровольно отправился на фронт.</p><p><b>Военные годы.</b> Участвовал в боевых действиях, был ранен; в источниках отмечено его участие в освобождении Витебска и водружении Красного знамени.</p><p><b>После войны.</b> Продолжил литературную и исследовательскую деятельность, переводил русских писателей на кабардинский язык, изучал кабардинский фольклор.</p><p><b>1 мая 1957 года.</b> Умер в возрасте 36 лет.</p></div><h3>Награды</h3><p>Среди наград, упоминаемых в биографических материалах, — ордена Красного Знамени, Александра Невского, Отечественной войны II степени и Красной Звезды, а также медали.</p><div class="quiz"><h3>Проверь знания: Бетал Куашев</h3><form id="quiz2"></form><button class="btn" onclick="grade('quiz2','r2')">Проверить ответы</button><button class="btn secondary" onclick="resetQuiz('quiz2','r2')">Сбросить</button><div class="result" id="r2" aria-live="polite"></div></div></section>
+<section class="card" id="videos"><div class="eyebrow">Видеоматериалы проекта</div><h2>Видео о героях и истории</h2><p>Посмотрите видеоматериалы, подготовленные для учебного проекта.</p><div class="video-grid">
+<div class="video-item"><h3>Видео 1</h3><video controls preload="metadata" playsinline><source src="VID-20261126-WA0018.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение видео.</video><p class="video-note">Видеоматериал проекта</p></div>
+<div class="video-item"><h3>Видео 2</h3><video controls preload="metadata" playsinline><source src="VID-20261126-WA0020.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение видео.</video><p class="video-note">Видеоматериал проекта</p></div>
+</div></section>
+<section class="card sources" id="sources"><div class="eyebrow">Для дальнейшего чтения</div><h2>Источники</h2><ul><li><a href="https://nmkbr.ru/" target="_blank" rel="noopener">Национальный музей Кабардино-Балкарской Республики</a> — материал к 100-летию Бетала Куашева.</li><li><a href="https://kbpravda.ru/" target="_blank" rel="noopener">Газета «Кабардино-Балкарская правда»</a> — публикации о Бетале Куашеве.</li><li><a href="https://kbncran.ru/" target="_blank" rel="noopener">Научные и культурные материалы Кабардино-Балкарии</a>.</li></ul><p><small>Учебный сайт. Перед использованием биографических сведений в официальной работе сверяйте даты и формулировки с архивными и музейными публикациями.</small></p></section>
+</main><footer>Учебный проект «Герои и память»</footer>
+<script>
+const quizzes={quiz1:[['В каком году родился Хасан Талибович Иванов?',['1918 год','1920 год','1922 год'],0],['В каком селе он родился?',['Докшоково','Старый Черек','Нальчик'],1],['Когда рота под его командованием форсировала Одер?',['24 января 1945 года','9 мая 1945 года','22 июня 1941 года'],0],['Какое высокое звание получил Иванов?',['Герой Советского Союза','Заслуженный лётчик СССР','Герой Социалистического Труда'],0],['С какой войной связан его подвиг?',['Первая мировая война','Великая Отечественная война','Отечественная война 1812 года'],1]],quiz2:[['В каком году родился Бетал Куашев?',['1918','1920','1925'],1],['Кем он был?',['Поэтом и переводчиком','Только военным инженером','Художником'],0],['В каком году он добровольно отправился на фронт?',['1939','1941','1945'],1],['Какую культуру и фольклор он исследовал?',['Кабардинский','Японский','Французский'],0],['Когда умер Бетал Куашев?',['1945','1957','1965'],1]]};
+function render(id){document.getElementById(id).innerHTML=quizzes[id].map((q,i)=>`<div class="question"><b>${i+1}. ${q[0]}</b>${q[1].map((a,j)=>`<label><input type="radio" name="${id}-${i}" value="${j}"> ${a}</label>`).join('')}</div>`).join('')}
+function grade(id,out){let score=0,answered=0;quizzes[id].forEach((q,i)=>{let v=document.querySelector(`input[name="${id}-${i}"]:checked`);if(v){answered++;if(+v.value===q[2])score++}});document.getElementById(out).textContent=`Правильных ответов: ${score} из ${quizzes[id].length}. Отвечено: ${answered} из ${quizzes[id].length}.`}
+function resetQuiz(id,out){document.getElementById(id).reset();document.getElementById(out).textContent=''}render('quiz1');render('quiz2');
+</script></body></html>
